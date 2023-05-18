@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Peliculas</title>
+</head>
+<body>
+
+	<header>
+		<div class="contenedor">
+			<h2 id="recomendadas"></h2>
+			<h2 class="logotipo"><b>PelículasJ.com</b></h2>
+			<nav>
+				<a routerLink="/" routerLinkActive="activo"><b>Inicio</b></a>
+                <a routerLink="/peliculas" routerLinkActive="activo"><b>Películas</b></a>
+      			<a routerLink="/contacto" routerLinkActive="activo"><b>Contacto</b></a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container">
+		
+		<input type="text" id="input-search" placeholder="Buscar...">
+		<div class="filters">
+			<label for="category-select">Categoría:</label>
+			<select id="category-select">
+				<option value="">Todas</option>
+				<option value="accion">Acción</option>
+				<option value="terror">Terror</option>
+				<option value="aventura">Aventura</option>
+				<option value="comedia">Comedia</option>
+				<option value="documental">Documental</option>
+				<option value="drama">Drama</option>
+			</select>
+			<label for="year-select">Año:</label>
+			<select id="year-select">
+				<option value="">Todos</option>
+				<option value="2023">2023</option>
+				<option value="2022">2022</option>
+				<option value="2021">2021</option>
+				<option value="2020">2020</option>
+				<option value="2019">2019</option>
+				<option value="2018">2018</option>
+				<option value="2017">2017</option>
+				<option value="2016">2016</option>
+				<option value="2015">2015</option>
+				<option value="2014">2014</option>
+				<option value="2013">2013</option>
+				<option value="2012">2012</option>
+				<option value="2011">2011</option>
+				<option value="2010">2010</option>
+				<option value="2009">2009</option>
+				<option value="2008">2008</option>
+				<option value="2007">2007</option>
+				<option value="2006">2006</option>
+			</select>
+		</div>
+		
+		<section>
+		<h1>Películas Populares</h1>
+		<ul id="image-list">
+			
+			<li data-category="accion" data-year="2023"><a href="https://www.themoviedb.org/movie/1003580-legion-of-super-heroes?language=es">
+				<img src="img/Legion de Super Heroes.jpg" alt="pelicula de accion"></a></li>
+			<li data-category="terror" data-year="2022"><a href="https://www.themoviedb.org/movie/760204-the-lair?language=es">
+				<img src="img/La Guarida.jpg" alt="pelicula de terror"></a></li>
+			<li data-category="aventura" data-year="2023"><a href="https://www.themoviedb.org/movie/502356-the-super-mario-bros-movie?language=es">
+				<img src="img/Super Mario Bros.jpg" alt="pelicula de aventura"></a></li>
+			<li data-category="accion" data-year="2023"><a href="https://www.themoviedb.org/movie/724495-woman-king?language=es">
+				<img src="img/La Mujer Rey.jpg" alt="pelicula de accion"></a></li>
+			<li data-category="aventura" data-year="2018"><a href="https://www.themoviedb.org/movie/385448-the-little-mermaid?language=es">
+				<img src="img/La Sirenita.jpg" alt="pelicula de aventura"></a></li>
+			<li data-category="aventura" data-year="2022"><a href="https://www.themoviedb.org/movie/599019?language=es">
+				<img src="img/Big Trip 2.jpg" alt="pelicula de aventura"></a></li>
+			<li data-category="comedia" data-year="2023"><a href="https://www.themoviedb.org/tv/123856-florida-man?language=es">
+				<img src="img/Un Hombre de Florida.jpg" alt="pelicula de comedia, drama"></a></li>
+			<li data-category="comedia" data-year="2022"><a href="https://www.themoviedb.org/movie/809787-mafia-mamma?language=es">
+				<img src="img/Mafia Mamma.jpg" alt="pelicula de comedia"></a></li>
+			<li data-category="aventura" data-year="2023"><a href="https://www.themoviedb.org/movie/700391-65?language=es">
+				<img src="img/65.jpg" alt="pelicula de aventura, accion"></a></li>
+			<li data-category="aventura" data-year="2023"><a href="https://www.themoviedb.org/movie/493529-dungeons-dragons-honor-among-thieves?language=es">
+				<img src="img/Calabozos y Dragones.jpg" alt="pelicula de accion"></a></li>
+			<li data-category="documental" data-year="2022"><a href="https://www.themoviedb.org/movie/1040330-black-adam-saviour-or-destroyer?language=es">
+				<img src="img/Black Adam.jpg" alt="documental"></a></li>
+			<li data-category="accion" data-year="2023"><a href="https://www.themoviedb.org/movie/1070777-one-day-as-a-lion?language=es">
+				<img src="img/One Day As a Lion.jpg" alt="pelicula de accion"></a></li>
+			<li data-category="accion" data-year="2023"><a href="https://www.themoviedb.org/movie/675353-sonic-the-hedgehog-2?language=es">
+				<img src="img/Sonic 2.jpg" alt="pelicula de accion"></a></li>
+			<li data-category="comedia" data-year="2022"><a href="https://www.themoviedb.org/movie/800787-a-good-person?language=es">
+				<img src="img/A Good Person.jpg" alt="pelicula de comedia"></a></li>
+			<li data-category="drama" data-year="2023"><a href="https://www.themoviedb.org/tv/223313-obsession?language=es">
+				<img src="img/Obsesion.jpg" alt="pelicula de drama"></a></li>
+			<li data-category="terror" data-year="2023"><a href="https://www.themoviedb.org/movie/934433-scream-vi?language=es">
+				<img src="img/Scream 6.jpg" alt="pelicula de terror"></a></li>
+			<li data-category="accion" data-year="2008"><a href="https://www.themoviedb.org/movie/7555-rambo?language=es">
+				<img src="img/John Rambo.jpg" alt="pelicula de accion"></a></li>
+			<li data-category="drama" data-year="2023"><a href="https://www.themoviedb.org/tv/195868-gotham-knights?language=es">
+				<img src="img/Gotham Lovagjai.jpg" alt="pelicula de drama"></a></li>
+			<li data-category="terror" data-year="2022"><a href="https://www.themoviedb.org/movie/1023313-la-exorcista?language=es">
+				<img src="img/La Exorcista.jpg" alt="pelicula de terror"></a></li>
+			<li data-category="aventura, accion" data-year="2022"><a href="https://www.themoviedb.org/movie/76600-avatar-the-way-of-water?language=es">
+				<img src="img/Avatar.jpg" alt="pelicula de accion"></a></li>
+			</ul>
+		</section>
+
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

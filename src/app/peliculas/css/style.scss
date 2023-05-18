@@ -1,0 +1,227 @@
+// Variables
+$primary-color: rgb(252, 252, 253);
+$secondary-color: rgb(209, 207, 207);
+$btn-color: #273746;
+$color-fondo: #020202;
+$font-logotipo: 'Bebas Neue', cursive;
+$padding-nav: 10px;
+$margin-nav: 20px;
+$font-stack: Arial, sans-serif;
+$font-size: 16px;
+$gutter: 20px; // Espacio entre las imágenes
+$min-image-width: 200px; // Ancho mínimo de cada imagen
+$max-images-per-row: 4; // Número máximo de imágenes por fila
+
+// Main Styling
+html,
+body {
+	font-family: $font-stack;
+	background-color: $color-fondo;
+	color: $primary-color;
+  }
+
+  h1 {
+	font-size: 2.5rem;
+	color: $primary-color;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.container {
+    text-align: center;
+	
+}
+  .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url('/img/baner6.jpg');
+	background-size: cover;
+    background-position: center;
+	padding: 10px;
+	height: 15vh;
+	margin: 0 auto;
+	width: 80%;
+	max-width: 90vw;
+	
+	@media (max-width: 768px) {
+		flex-direction: column;
+		height: auto;
+	}
+}
+
+.logotipo {
+	color: $primary-color;
+	flex: 1;
+	font-size: 2rem;
+	font-family: $font-logotipo;
+	margin-top: 10px;
+}
+
+nav {
+	text-align: right;
+	display: flex;
+  	justify-content: flex-end;
+	
+	@media (max-width: 768px) {
+		text-align: center;
+		margin-top: -20px;
+		
+	}
+}
+
+nav a {
+	display: block;
+  	padding: 10px 15px;
+ 	margin-left: 20px;
+	color: $secondary-color;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: $font-size;
+	
+	@media (max-width: 768px) {
+		display: block;
+		margin: 10px 0;
+	}
+}
+
+nav a.activo {
+	color: $primary-color;
+}
+#input-search {
+	width: 80%;
+	margin-top: 20px;
+	height: 4px;
+	border: none;
+	background-color: #ddd;
+	outline: none;
+	font-size: 16px;
+	padding: 10px;
+  }
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+	color: $primary-color;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+select {
+    margin-right: 20px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+#contact {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/1366_2000.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	padding: 100px 0;
+	
+	h2 {
+		text-align: center;
+		padding-bottom: 10px;
+		color: $primary-color; 
+	}
+	p.large {
+		text-align: center;
+		padding-bottom: 50px;
+		color: $primary-color;
+		margin: 0 auto; /* Agrega esta línea para centrar horizontalmente el párrafo */
+        max-width: 80%; /* Establece el ancho máximo del párrafo al 90% */
+	}
+
+	.btn {
+		display: inline-block;
+		font-size: 15px;
+		padding: 12px 23px;
+		cursor: pointer;
+		font-weight: bold;
+		letter-spacing: 1px;
+		border-radius: 4px;
+		&-dark {
+			background: $btn-color;
+			border: 1px solid $btn-color;
+			color: #fff;
+		}
+	} //End .btn
+	form {
+		width: 50%;
+		margin: 0 auto;
+		
+	}
+
+	form {
+		label {
+			display: inline-block;
+			margin-bottom: 6px;
+		}
+		.form-group {
+			margin-bottom: 16px;
+			&-control {
+				width: 100%;
+				padding: 7px 12px;
+				font-size: 1rem;
+				line-height: 1.5;
+				background: $secondary-color;
+				border: none;
+				border-radius: 4px;
+			} //End form .form-group-control
+		} // End form .form-group
+		button {
+			width: 100%;
+		}
+	} //End form
+}
+
+
+#image-list {
+	list-style: none;
+	margin-left: 70px;
+	display: flex; // convierte al ul en un contenedor flexible
+	justify-content: center; // alinea horizontalmente los elementos en el centro del contenedor
+	align-items: center; // alinea verticalmente los elementos en el centro del contenedor
+	flex-wrap: wrap; // envuelve los elementos a la siguiente línea si no caben en la actual
+	width: 90%;
+    max-width: 1300px; /* opcional - para establecer un ancho máximo */
+	li {
+	  margin: 0 10px; // añade un margen a ambos lados de cada elemento li
+	  margin-right: 10px;
+	  margin-bottom: 10px;
+	}
+	@media screen and (max-width: 767px) {
+		#image-list li {
+		  width: 50%;
+		}
+	  }
+  }
+
+
+// Footer
+#mainfooter {
+	background: $primary-color;
+	text-align: center;
+	padding: 30px;
+}
+
+
+
+
+
+
